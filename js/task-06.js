@@ -1,7 +1,7 @@
 const inputRef = document.getElementById('validation-input');
 
 inputRef.addEventListener('blur', (e) => {
-    if (e.target.value.length == e.target.dataset.length) {
+    if (e.target.value.length === +e.target.dataset.length) {
         e.target.classList.add('valid');
         e.target.classList.remove('invalid');
     }

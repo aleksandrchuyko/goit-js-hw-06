@@ -10,9 +10,10 @@ formRef.addEventListener('submit', (e) => {
         formData[emailRef.getAttribute('name')] = emailRef.value;
         formData[passwordRef.getAttribute('name')] = passwordRef.value;
         console.log(formData);
-        e.currentTarget.reset();
     } else {
         alert("Заполните все поля!");
     }
+    e.currentTarget.reset();
 });
+
 
